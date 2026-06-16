@@ -1,0 +1,24 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "practice TDD using jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cakey01/testing-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Cakey01/testing-practice/issues"
+  },
+  "homepage": "https://github.com/Cakey01/testing-practice#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}

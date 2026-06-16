@@ -1,4 +1,5 @@
 import capitalize from './capitalize.js';
+import reverseString from './reverseString';
 
 // capitalize tests
 
@@ -18,3 +19,16 @@ test('returns already capitalized word', () => {
   expect(capitalize('Word')).toBe('Word');
 });
 
+// reverse tests
+
+test('function exists', () => {
+  expect(reverseString('string')).toBeDefined();
+});
+
+test('returns gnirts', () => {
+  expect(reverseString('string')).toBe('gnirts');
+});
+
+test('returns drow', () => {
+  expect(reverseString('word')).toBe('drow');
+});

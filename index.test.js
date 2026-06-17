@@ -1,6 +1,7 @@
 import capitalize from './capitalize.js';
 import reverseString from './reverseString';
 import calculator from './calculator';
+import caesarCipher from './caesarCipher'
 
 // capitalize tests
 
@@ -57,4 +58,18 @@ test('1 / 2 = .5 and 4 / 2 = 2', () => {
   expect(calculator.divide(1, 2)).toBe(.5);
   expect(calculator.divide(4, 2)).toBe(2);
 });
+
+// caesarCipher
+
+test('function exists and returns', () => {
+  expect(caesarCipher('abc', 2)).toBeDefined();
+});
+
+test('abc, 3 returns def', () => {
+  expect(caesarCipher('abc', 3)).toBe('def');
+});
+
+test('def, 3 returns ghi', () => {
+  expect(caesarCipher('def', 3)).toBe('ghi'); 
+})
 

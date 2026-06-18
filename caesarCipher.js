@@ -17,3 +17,4 @@ const shift = (arr, factor) => {
   })
   return shifted.join('');
 }
+

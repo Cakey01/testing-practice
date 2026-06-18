@@ -80,3 +80,7 @@ test('case preserved', () => {
 test('wraps from z to a', () => {
   expect(caesarCipher('xyz', 3)).toBe('abc');
 });
+
+test('punctuation remains', () => {
+  expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
+});

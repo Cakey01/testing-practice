@@ -73,3 +73,10 @@ test('def, 3 returns ghi', () => {
   expect(caesarCipher('def', 3)).toBe('ghi'); 
 })
 
+test('case preserved', () => {
+  expect(caesarCipher('HeLLo', 3)).toBe('KhOOr');
+});
+
+test('wraps from z to a', () => {
+  expect(caesarCipher('xyz', 3)).toBe('abc');
+});

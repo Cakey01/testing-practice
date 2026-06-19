@@ -1,7 +1,8 @@
 import capitalize from './capitalize.js';
 import reverseString from './reverseString';
 import calculator from './calculator';
-import caesarCipher from './caesarCipher'
+import caesarCipher from './caesarCipher';
+import analyzeArray from './analyzeArray';
 
 // capitalize tests
 
@@ -84,3 +85,20 @@ test('wraps from z to a', () => {
 test('punctuation remains', () => {
   expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
 });
+
+// analyzeArray
+
+const object = {
+  average: 4,
+  min: 1,
+  max: 8,
+  length: 6
+};
+
+test('exists', () => {
+  expect(analyzeArray([0,1,2])).toBeDefined();
+})
+
+test('handles [1, 8, 3, 4, 2, 6]', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toStrictEqual(object)
+})
